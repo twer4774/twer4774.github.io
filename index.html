@@ -77,13 +77,16 @@
         var postData = {
             postcode : data.postcode,
             zonecode : data.zonecode,
-            addr : fullRoadAddr
+            addr : fullRoadAddr,
         };
         
         window.postMessageToiOS(postData);
       },
       width : '100%',
-      height : '100%'
+      height : '100%',
+      hideMapBtn : true,
+      hideEngBtn : true
+
     }).embed(element_layer);
     element_layer.style.display = 'block';
     initLayerPosition();
